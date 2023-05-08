@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Responsive Image Grid</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://i.pinimg.com/originals/b6/c7/63/b6c7633ac9ee002b8bb34538feeb5de5.jpg" style="width:100%">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROs_xwdBQmXewhc6TKnNKmKvSuE_PSDP_Caw&usqp=CAU" style="width:100%">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHkVUFADxKUQKBFNNDcMa9cAYIKQ2FpcwATw&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQV5HzBiZ19AKX5LSGwFbQ1L_0EOEm_vRkKxw&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFZJi5Ctu1LxDImZuGCIcukoIY0tAV5NwduA&usqp=CAU" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOFCE1kiOtLGJsFYXx74SlqK1SFhFOQH4B_g&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTe7QG_eJEg-Ag6W3GhX_R8YFJUK9kvl8eMVQ&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4inGVSDBgkfWAOppX4VXHDKq6XFejNqOCNA&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQSQRA71aS1UQUdEZUHbuw8E2sHZujjUcPZHQ&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTEQMTGq2CGJ1XX2gG_eAJDOrsmMTJqpkoEdw&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcToElJV5SrxtKd9uxWUdRIc-4AAy61xnhzUOg&usqp=CAU" style="width:100%">
+  </div> 
+   
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQuFpSAxB16D55XJRrc5KZ1Ziw4M-KXViTusQ&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmeOTA278z2aTdqrXNIMKnKeQ1jtYy7RCang&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRaiSbBUzgumas3nCf3da9QEfiXMJwm1k-DuA&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHB9-9WJ8DM1AGNXNmtN1QOBzaPq0CzbFHHA&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSG7onasa1KHidlhRHuvGZy5tS8wQOparRWEg&usqp=CAU" style="width:100%">
+   
+   
+  </div>
+  
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHkVUFADxKUQKBFNNDcMa9cAYIKQ2FpcwATw&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRxca0Iq9E68gKkL5cRBclmX04tN5yOBIyzJw&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUxa3AfYV7g7vVKcNkql7UmiDI-gyyyvwtpQ&usqp=CAU" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRG2mPdbX8Cm3cKO-SXvUSqFAEwgWWfjjof5g&usqp=CAU" style="width:100%">
+   
+  </div>
+</div>
+
+</body>
+</html>

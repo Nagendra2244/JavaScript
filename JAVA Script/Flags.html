@@ -1,0 +1,26 @@
+<html>
+<body>
+<h2>Regular Expressions</h2>
+<p>Click the button to search for "Labs" in a string.</p>
+
+<button onclick="checkfunction()">Try it</button>
+
+<p id="demo"></p>
+<script>
+
+function checkfunction() {
+  var str = "Visit La1bs";
+  var patt = /Labs/i;
+  var result = str.match(patt);
+  if(patt.test(str)){
+  alert("valid String")
+  }
+  else {
+     alert("Invalid string")
+  }
+}
+</script>
+
+</body>
+
+</html>

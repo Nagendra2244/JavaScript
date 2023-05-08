@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<h2>ES6 Class</h2>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const myCar = new Car("Audi", 2021);
+document.getElementById("demo").innerHTML =
+myCar.name + " " + myCar.year;
+</script>
+
+</body>
+</html>

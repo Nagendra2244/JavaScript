@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1> JavaScript Object</h1>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	
+	<script>
+		var person = { 
+                firstName: "Mahesh", 
+                lastName: "Kanna", 
+                age: 25, 
+                getFullName: function () { 
+                    return this.firstName + ' ' + this.lastName 
+                    } 
+            };
+
+		document.getElementById("p1").innerHTML = person.firstName; 
+		document.getElementById("p2").innerHTML = person.lastName; 
+
+
+		document.getElementById("p3").innerHTML = person.getFullName();
+
+    </script>
+</body>
+</html>

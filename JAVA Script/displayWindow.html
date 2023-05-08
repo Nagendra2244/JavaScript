@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body >
+<h1>
+Resize the window to display window size
+</h1>
+<p id="result"></p>
+
+<script>
+    function displayWindowSize() {
+        var w = window.outerWidth;
+        var h = window.outerHeight;
+        var txt = "Window size: width=" + w + ", height=" + h;
+        document.getElementById("result").innerHTML = txt;
+    }
+    window.onresize = displayWindowSize;
+</script>
+</body>
+</html>
