@@ -1,0 +1,27 @@
+<!-- Write a JavaScript program to validate if a given input is a valid IPv4 address. -->
+<!DOCTYPE html>
+<head>
+	<title>IPv4 Address Validation</title>
+</head>
+<body>
+	<label for="ipv4">Enter IPv4 address:</label>
+	<input type="text" id="ipv4">
+
+<button onclick="validateIPv4()">Validate</button>
+
+<p id="result"></p>
+
+<script>
+	function validateIPv4() {
+		const ipv4Regex = /^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/;
+		const input = document.getElementById("ipv4").value;
+
+		if (ipv4Regex.test(input)) {
+			document.getElementById("result").innerHTML = `${input} is a valid IPv4 address.`;
+		} else {
+			document.getElementById("result").innerHTML = `${input} is not a valid IPv4 address.`;
+		}
+	}
+</script>
+</body>
+</html>

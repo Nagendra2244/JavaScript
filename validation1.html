@@ -1,0 +1,28 @@
+<!-- Write a JavaScript program to validate if a given email address is valid. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to JavaScript</title>
+  </head>
+  <body>
+    <label for="emailInput">Enter your email address:</label>
+    <input type="text" id="emailInput">
+    <button onclick="validateEmail()">Validate</button>
+    <p id="result"></p>
+
+    <script>
+      function validateEmail() {
+        const emailInput = document.getElementById("emailInput").value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const result = document.getElementById("result");
+
+        if (emailRegex.test(emailInput)) {
+          result.innerHTML = `${emailInput} is a valid email address.`;
+        } else {
+          result.innerHTML = `${emailInput} is not a valid email address.`;
+        }
+      }
+    </script>
+  </body>
+</html>
+

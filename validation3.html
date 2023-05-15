@@ -1,0 +1,41 @@
+<!--- Write a JavaScript program to validate if a given date is in the correct format (e.g., "mm/dd/yyyy"). --->
+<!DOCTYPE html>
+<head>
+  <title>Welcome to My javaScript</title>
+  <script>
+    function validateDate() {
+      const dateString = document.getElementById("dateInput").value;
+      const dateRegex = /^\d{2}\/\d{2}\/\d{4}$/;
+      const resultSpan = document.getElementById("resultSpan");
+
+      if (!dateRegex.test(dateString)) {
+        resultSpan.textContent = "Invalid date format (mm/dd/yyyy)";
+        return false;
+      }
+
+      const dateParts = dateString.split("/");
+      const month = parseInt(dateParts[0], 10);
+      const day = parseInt(dateParts[1], 10);
+      const year = parseInt(dateParts[2], 10);
+      const date = new Date(year, month - 1, day);
+
+      if (isNaN(date.getTime())) {
+        resultSpan.textContent = "Invalid date";
+        return false;
+      }
+
+      resultSpan.textContent = "Valid date";
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h1>Date Validation Example</h1>
+  <form onsubmit="return validateDate()">
+    <label for="dateInput">Enter a date (mm/dd/yyyy):</label>
+    <input type="text" id="dateInput" name="dateInput">
+    <button type="submit">Validate</button>
+  </form>
+  <span id="resultSpan"></span>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!--- Write a JavaScript function to validate if a given input is a valid URL. --->
+<!DOCTYPE html>
+<head>
+    <title>Welcome to my JavaScript</title>
+</head>
+<body>
+    <input type="text" id="urlInput" placeholder="Enter a URL">
+    <button onclick="validateUrl()">Validate</button>
+    <p id="result"></p>
+    <script>
+      function validateUrl() {
+        const urlInput = document.getElementById("urlInput").value;
+        const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+        const result = document.getElementById("result");
+  
+        if (urlRegex.test(urlInput)) {
+          result.innerHTML = `${urlInput} is a valid URL.`;
+        } else {
+          result.innerHTML = `${urlInput} is not a valid URL.`;
+        }
+      }
+    </script>
+  </body>
+  </html>
